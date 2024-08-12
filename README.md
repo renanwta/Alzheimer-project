@@ -1,19 +1,11 @@
 # Alzheimer-project
-## Métodologia CRISP-DM
-O CRISP-DM é uma metodologia que consiste 6 principais etapas para a criação de um projeto de business, o presente projeto teve como sua base de criação ao modelo CRISP contendo 6 principais etapas:
-<div align="center">
-<img src="https://github.com/user-attachments/assets/0c9fb82d-15a3-43ce-9a8c-6dafce20b542" width="500px" />
-</div>
+## 1. Introdução
+
+  Conhecido comumente como a doença da perda de memória, o Alzheimer é um transtorno neurodegenerativo progressivo que faz com que o paciente, ao longo do tempo, perca gradativamente a memória e que em casos mais avançados tenha emoções, personalidade e comportamentos sociais alterados. Apesar de comumente as pessoas terem conhecimento dessa doença após o agravamento dos sintomas mais simples, é possível observar a probabilidade do indivíduo adquirir a doença ou não baseados em características fisiologicas e rotineiras dela, para isso, foi utilziados dados públicos que possuem essas característica dos pacientes e se a pessoa possuia ou não a doença. 
+Os dados foram adquiridos na base de dados público Kaggle.com, segundo o autor os dado não possuem nenhum tipo de preprocesamento de dados e somente as respostas dos pacientes, além disso, para melhor compreensão da criação do modelo, foi utilizado a metodologia CRISP-DM que consiste 6 principais etapas para a criação de um projeto de data science.
 
 
-
-## Business Understanding
-O dados foram adquiridos na base de dados público Kaggle.com, segundo o autor os dado não possuem nenhum tipo de preprocesamento de dados e somente as respostas dos pacientes.
-
-- Objetivo
-  O objetivo deste projeto foi a criação de um modelo preditivo capaz de detectar a possível presença dessa doença utilizando dados como características demográficas, estilo de vida, histórico médico, avaliação funcional e cognitiva, além dos sintomas do paciente. Isso permite que, mesmo na ausência dos sintomas mais leves, o modelo possa identificar se o paciente tende a desenvolver a doença antes do aparecimento dos sintomas mais avançados ou antes de uma cosulta médica.
-
-- Ferramentas
+## 2. Ferramentas utilizadas
   - Tratamento dos dados: Pandas
   - Biblioteca de Machine Learning: Sklearn
   - Ferramentas de seleção de Features: Chi² e F_classifier 
@@ -21,74 +13,85 @@ O dados foram adquiridos na base de dados público Kaggle.com, segundo o autor o
   - Gráficos: Seaborn e Matplotlib
   - Modelos de ML:
  
-## Data Understanding
-- Patient Information
-  - Patient ID
+## 3. Principais Features e Target
+Informações do Paciente
+- ID do Paciente
+    - PatientID: Um identificador único atribuído a cada paciente (4751 a 6900).
 
-    PatientID: A unique identifier assigned to each patient (4751 to 6900).
+- Detalhes Demográficos
 
-- Demographic Details
+    - Idade: A idade dos pacientes varia de 60 a 90 anos.
+    - Gênero: Gênero dos pacientes, onde 0 representa Masculino e 1 representa Feminino.
+    - Etnia: A etnia dos pacientes, codificada da seguinte forma:
+        0: Caucasiano
+        1: Afro-Americano
+        2: Asiático
+        3: Outro
+    - Nível de Escolaridade: O nível de escolaridade dos pacientes, codificado da seguinte forma:
+        0: Nenhum
+        1: Ensino Médio
+        2: Graduação
+        3: Pós-Graduação
 
-    - Age: The age of the patients ranges from 60 to 90 years.
-    - Gender: Gender of the patients, where 0 represents Male and 1 represents Female.
-    - Ethnicity: The ethnicity of the patients, coded as follows:
-    0: Caucasian
-    1: African American
-    2: Asian
-    3: Other
-    EducationLevel: The education level of the patients, coded as follows:
-    0: None
-    1: High School
-    2: Bachelor's
-    3: Higher
+- Fatores de Estilo de Vida
 
-- Lifestyle Factors
+    - IMC: Índice de Massa Corporal dos pacientes, variando de 15 a 40.
+    - Tabagismo: Status de tabagismo, onde 0 indica Não e 1 indica Sim.
+    - Consumo de Álcool: Consumo semanal de álcool em unidades, variando de 0 a 20.
+    - Atividade Física: Atividade física semanal em horas, variando de 0 a 10.
+    - Qualidade da Dieta: Pontuação da qualidade da dieta, variando de 0 a 10.
+    - Qualidade do Sono: Pontuação da qualidade do sono, variando de 4 a 10.
 
-    - BMI: Body Mass Index of the patients, ranging from 15 to 40.
-    - Smoking: Smoking status, where 0 indicates No and 1 indicates Yes.
-    - AlcoholConsumption: Weekly alcohol consumption in units, ranging from 0 to 20.
-    - PhysicalActivity: Weekly physical activity in hours, ranging from 0 to 10.
-    - DietQuality: Diet quality score, ranging from 0 to 10.
-    - SleepQuality: Sleep quality score, ranging from 4 to 10.
+- Histórico Médico
 
-- Medical History
+    - Histórico Familiar de Alzheimer: Histórico familiar de Doença de Alzheimer, onde 0 indica Não e 1 indica Sim.
+    - Doença Cardiovascular: Presença de doença cardiovascular, onde 0 indica Não e 1 indica Sim.
+    - Diabetes: Presença de diabetes, onde 0 indica Não e 1 indica Sim.
+    - Depressão: Presença de depressão, onde 0 indica Não e 1 indica Sim.
+    - Lesão na Cabeça: Histórico de lesão na cabeça, onde 0 indica Não e 1 indica Sim.
+    - Hipertensão: Presença de hipertensão, onde 0 indica Não e 1 indica Sim.
 
-    - FamilyHistoryAlzheimers: Family history of Alzheimer's Disease, where 0 indicates No and 1 indicates Yes.
-    - CardiovascularDisease: Presence of cardiovascular disease, where 0 indicates No and 1 indicates Yes.
-    - Diabetes: Presence of diabetes, where 0 indicates No and 1 indicates Yes.
-    - Depression: Presence of depression, where 0 indicates No and 1 indicates Yes.
-    - HeadInjury: History of head injury, where 0 indicates No and 1 indicates Yes.
-    - Hypertension: Presence of hypertension, where 0 indicates No and 1 indicates Yes.
+- Medições Clínicas
 
-- Clinical Measurements
+    - Pressão Arterial Sistólica: Pressão arterial sistólica, variando de 90 a 180 mmHg.
+    - Pressão Arterial Diastólica: Pressão arterial diastólica, variando de 60 a 120 mmHg.
+    - Colesterol Total: Níveis de colesterol total, variando de 150 a 300 mg/dL.
+    - Colesterol LDL: Níveis de colesterol de lipoproteína de baixa densidade, variando de 50 a 200 mg/dL.
+    - Colesterol HDL: Níveis de colesterol de lipoproteína de alta densidade, variando de 20 a 100 mg/dL.
+    - Triglicerídeos: Níveis de triglicerídeos, variando de 50 a 400 mg/dL.
 
-    - SystolicBP: Systolic blood pressure, ranging from 90 to 180 mmHg.
-    - DiastolicBP: Diastolic blood pressure, ranging from 60 to 120 mmHg.
-    - CholesterolTotal: Total cholesterol levels, ranging from 150 to 300 mg/dL.
-    - CholesterolLDL: Low-density lipoprotein cholesterol levels, ranging from 50 to 200 mg/dL.
-    - CholesterolHDL: High-density lipoprotein cholesterol levels, ranging from 20 to 100 mg/dL.
-    - CholesterolTriglycerides: Triglycerides levels, ranging from 50 to 400 mg/dL.
+- Avaliações Cognitivas e Funcionais
 
-- Cognitive and Functional Assessments
+    - MMSE: Pontuação do Mini Exame do Estado Mental, variando de 0 a 30. Pontuações mais baixas indicam comprometimento cognitivo.
+    - Avaliação Funcional: Pontuação de avaliação funcional, variando de 0 a 10. Pontuações mais baixas indicam maior comprometimento.
+    - Queixas de Memória: Presença de queixas de memória, onde 0 indica Não e 1 indica Sim.
+    - Problemas Comportamentais: Presença de problemas comportamentais, onde 0 indica Não e 1 indica Sim.
+    - Atividades da Vida Diária: Pontuação das atividades da vida diária, variando de 0 a 10. Pontuações mais baixas indicam maior comprometimento.
 
-    - MMSE: Mini-Mental State Examination score, ranging from 0 to 30. Lower scores indicate cognitive impairment.
-    - FunctionalAssessment: Functional assessment score, ranging from 0 to 10. Lower scores indicate greater impairment.
-    - MemoryComplaints: Presence of memory complaints, where 0 indicates No and 1 indicates Yes.
-    - BehavioralProblems: Presence of behavioral problems, where 0 indicates No and 1 indicates Yes.
-    - ADL: Activities of Daily Living score, ranging from 0 to 10. Lower scores indicate greater impairment.
+- Sintomas
 
-- Symptoms
+    - Confusão: Presença de confusão, onde 0 indica Não e 1 indica Sim.
+    - Desorientação: Presença de desorientação, onde 0 indica Não e 1 indica Sim.
+    - Mudanças de Personalidade: Presença de mudanças de personalidade, onde 0 indica Não e 1 indica Sim.
+    - Dificuldade em Completar Tarefas: Presença de dificuldade em completar tarefas, onde 0 indica Não e 1 indica Sim.
+    - Esquecimento: Presença de esquecimento, onde 0 indica Não e 1 indica Sim.
 
-    - Confusion: Presence of confusion, where 0 indicates No and 1 indicates Yes.
-    - Disorientation: Presence of disorientation, where 0 indicates No and 1 indicates Yes.
-    - PersonalityChanges: Presence of personality changes, where 0 indicates No and 1 indicates Yes.
-    - DifficultyCompletingTasks: Presence of difficulty completing tasks, where 0 indicates No and 1 indicates Yes.
-    - Forgetfulness: Presence of forgetfulness, where 0 indicates No and 1 indicates Yes.
+- Informações de Diagnóstico
 
-- Diagnosis Information
+    - Diagnóstico: Status de diagnóstico para Doença de Alzheimer, onde 0 indica Não e 1 indica Sim.
 
-    - Diagnosis: Diagnosis status for Alzheimer's Disease, where 0 indicates No and 1 indicates Yes.
+- Informações Confidenciais
 
-- Confidential Information
+    - Médico Responsável: Esta coluna contém informações confidenciais sobre o médico responsável, com "XXXConfid" como o valor para todos os pacientes.
+ 
+## 4. Problematização e objsetivo do projeto
+4.1 Objetivo
 
-    - DoctorInCharge: This column contains confidential information about the doctor in charge, with "XXXConfid" as the value for all patients.
+  O objetivo deste projeto foi a criação de um modelo preditivo capaz de detectar a possível presença dessa doença utilizando dados como características demográficas, estilo de vida, histórico médico, avaliação funcional e cognitiva, além dos sintomas do paciente. Isso permite que, mesmo na ausência dos sintomas mais leves, o modelo possa identificar se o paciente tende a desenvolver a doença antes do aparecimento dos sintomas mais avançados ou antes de uma cosulta médica.
+
+4.2 Beneficios
+
+  O principal benefício está relacionado com a possível antecipação do indivíduo identificar se há a probabilidade de possuir alzheimer ou não (obs: Vale ressaltar que o cunho desse projeto é para estudos e caso tenha colocado os seus dados para gerar um resultado jamais deverá ser levado como verdade única, caso tenha dúvidas procure um médico especializado da área), outro ponto que pode ser utilziado é trazer mais uma camada de de interpretação para o diagnóstico do paciente pelo médico em relação da presença da doença.
+
+## 5. Resultados
+
