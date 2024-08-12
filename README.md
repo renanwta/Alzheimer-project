@@ -84,10 +84,11 @@ Informações do Paciente
 
     - Médico Responsável: Esta coluna contém informações confidenciais sobre o médico responsável, com "XXXConfid" como o valor para todos os pacientes.
  
-## 4. Problematização e objsetivo do projeto
+## 4. Problematização e objetivo do projeto
 4.1 Objetivo
 
   O objetivo deste projeto foi a criação de um modelo preditivo capaz de detectar a possível presença dessa doença utilizando dados como características demográficas, estilo de vida, histórico médico, avaliação funcional e cognitiva, além dos sintomas do paciente. Isso permite que, mesmo na ausência dos sintomas mais leves, o modelo possa identificar se o paciente tende a desenvolver a doença antes do aparecimento dos sintomas mais avançados ou antes de uma cosulta médica.
+  O intuito desse projeto é tentar trazer o projeto mais próximo da realidade contento tratamento, preprocessamento, criação do modelo, tuning e deploy do projeto
 
 4.2 Beneficios
 
