@@ -92,7 +92,25 @@ Informações do Paciente
 
 4.2 Beneficios
 
-  O principal benefício está relacionado com a possível antecipação do indivíduo identificar se há a probabilidade de possuir alzheimer ou não (obs: Vale ressaltar que o cunho desse projeto é para estudos e caso tenha colocado os seus dados para gerar um resultado jamais deverá ser levado como verdade única, caso tenha dúvidas procure um médico especializado da área), outro ponto que pode ser utilziado é trazer mais uma camada de de interpretação para o diagnóstico do paciente pelo médico em relação da presença da doença.
+  O principal benefício está relacionado com a possível antecipação do indivíduo identificar se há a probabilidade de possuir alzheimer ou não (obs: Vale ressaltar que o cunho desse projeto é para estudos e caso tenha colocado os seus dados para gerar um resultado jamais deverá ser levado como verdade única, caso tenha dúvidas procure um médico especializado da área), outro ponto que pode ser utiziado é trazer mais uma camada de de interpretação para o diagnóstico do paciente pelo médico em relação da presença da doença.
 
 ## 5. Resultados
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/45a93d01-8769-4b65-9795-f9c6dd6409ef" width="500px" />
+</div>
+
+* O modelo final após a criação da pipeline chegou em bons resultados com a acurácia média de 89% mais a precisão de e recall do paciente possuir a doença com 86% e 82$ respectivamente, além disso esse valores são exprissios já que o nosso dataset possui um desbalanceamento considerável entre os pacientes, onde a quantidade de pessoas que não possui a doença é superior aos que possuissem.
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/734d9b3e-d21b-4f9a-966c-fe1d3ff16301" width="500px" />
+</div>
+
+* A matriz de confusão consegue mostrar visualmente que o nosso modelo tem a capacidade de distinguir bem os novos dados, além disso, junto com os dados adquiridos no classifier report vemos que o percentual de precisão e recall são validados se baseado na matriz.
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/643849b2-9e3a-40b3-a222-3de4d76d4a53" width="500px" />
+</div>
+
+* A pontuação AUC mostra que o nosso modelo tem um nível execelente para a distinção binários entre os pacientes que possuem a doença do Alzhiemer com quem não tem.
 
