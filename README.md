@@ -119,6 +119,8 @@ Informações do Paciente
 
 * Modeling
   * Preprocessamento dos dados
+    * Busca do Modelo
+    * Cross Validation
   * Pipeline
   * Tuning
   * Pipeline + Tuning
