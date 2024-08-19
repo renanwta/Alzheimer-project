@@ -133,6 +133,12 @@ Informações do Paciente
 
 
 ## 6. Resultados
+<div align="center">
+<img src="https://github.com/user-attachments/assets/4cc2376e-8639-4dab-b83f-efd595c692e0" width="200px" />
+</div>
+* Pipeline final contendo os preprocessamentos e o modelo a ser utilizado.
+
+
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/20868082-8381-4281-a043-6b6767cf7621" width="150px" />
