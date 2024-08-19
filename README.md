@@ -6,10 +6,9 @@ Os dados foram adquiridos na base de dados público Kaggle.com, segundo o autor 
 
 
 ## 2. Ferramentas utilizadas
-  - Tratamento dos dados: Pandas
-  - Biblioteca de Machine Learning: Sklearn
-  - Ferramentas de seleção de Features: Chi² e F_classifier 
-  - Ferramentas de pré processamentos: SMOTE e Normalize
+  - Tratamento dos dados: Pandas e Numpy
+  - Biblioteca de Machine Learning: Scikit-Learn
+  - Ferramentas de pré processamentos: ADASYN e RobustScaler
   - Gráficos: Seaborn e Matplotlib
   - Modelos de ML: XGBoost
  
