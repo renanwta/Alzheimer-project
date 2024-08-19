@@ -94,7 +94,18 @@ Informações do Paciente
 
   O principal benefício está relacionado com a possível antecipação do indivíduo identificar se há a probabilidade de possuir alzheimer ou não (obs: Vale ressaltar que o cunho desse projeto é para estudos e caso tenha colocado os seus dados para gerar um resultado jamais deverá ser levado como verdade única, caso tenha dúvidas procure um médico especializado da área), outro ponto que pode ser utiziado é trazer mais uma camada de de interpretação para o diagnóstico do paciente pelo médico em relação da presença da doença.
 
-## 5. Resultados
+
+## 5. Estruturação
+  5.1 Estrutura do Crisp-DM
+
+  <div align="center">
+  <img src="https://github.com/user-attachments/assets/f5b4f818-83b3-42ab-8193-7c994eff5545" width="500px" />
+  </div>
+
+  
+  5.2 Estruturação do nosso projeto
+
+## 6. Resultados
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/45a93d01-8769-4b65-9795-f9c6dd6409ef" width="500px" />
