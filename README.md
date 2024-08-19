@@ -11,7 +11,7 @@ Os dados foram adquiridos na base de dados público Kaggle.com, segundo o autor 
   - Ferramentas de seleção de Features: Chi² e F_classifier 
   - Ferramentas de pré processamentos: SMOTE e Normalize
   - Gráficos: Seaborn e Matplotlib
-  - Modelos de ML:
+  - Modelos de ML: XGBoost
  
 ## 3. Principais Features e Target
 Informações do Paciente
