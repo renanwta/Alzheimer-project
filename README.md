@@ -126,7 +126,7 @@ Informações do Paciente
   * Pipeline + Tuning
 
 * Evaluation
-  * Cross Validation
+  * Nested Cross Validation
   * Matriz de Confusão
   * Curva-Roc
 
