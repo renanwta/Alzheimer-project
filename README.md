@@ -105,22 +105,49 @@ Informações do Paciente
   
   5.2 Estruturação do nosso projeto
 
+  Com base na metodologia Crisp-DM, a estruturação do projeto será feita da seguinte maneira:
+
+* Business Understanding
+* Data Understanding
+  * Separção de dataset treino e teste
+  * Exploração de dados
+  * Observando as distribuição das fetures
+  * Outliers
+  * Matriz de Correlação
+
+* Data Preparation
+
+* Modeling
+  * Preprocessamento dos dados
+  * Pipeline
+  * Tuning
+  * Pipeline + Tuning
+
+* Evaluation
+  * Cross Validation
+  * Matriz de Confusão
+  * Curva-Roc
+
+* Deploy
+
+
+
 ## 6. Resultados
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/45a93d01-8769-4b65-9795-f9c6dd6409ef" width="500px" />
+<img src="https://github.com/user-attachments/assets/20868082-8381-4281-a043-6b6767cf7621" width="200px" />
 </div>
 
 * O modelo final após a criação da pipeline chegou em bons resultados com a acurácia média de 89% mais a precisão de e recall do paciente possuir a doença com 86% e 82$ respectivamente, além disso esse valores são exprissios já que o nosso dataset possui um desbalanceamento considerável entre os pacientes, onde a quantidade de pessoas que não possui a doença é superior aos que possuissem.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/734d9b3e-d21b-4f9a-966c-fe1d3ff16301" width="500px" />
+<img src="https://github.com/user-attachments/assets/af3eb3b9-b894-432a-b68c-8ffe977cc531" width="500px" />
 </div>
 
 * A matriz de confusão consegue mostrar visualmente que o nosso modelo tem a capacidade de distinguir bem os novos dados, além disso, junto com os dados adquiridos no classifier report vemos que o percentual de precisão e recall são validados se baseado na matriz.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/643849b2-9e3a-40b3-a222-3de4d76d4a53" width="500px" />
+<img src="https://github.com/user-attachments/assets/97b26f72-abac-492f-964d-d4aeaa275b31" width="500px" />
 </div>
 
 * A pontuação AUC mostra que o nosso modelo tem um nível execelente para a distinção binários entre os pacientes que possuem a doença do Alzhiemer com quem não tem.
