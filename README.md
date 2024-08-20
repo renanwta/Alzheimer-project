@@ -8,7 +8,7 @@ Os dados foram adquiridos na base de dados público Kaggle.com, segundo o autor 
 ## 2. Ferramentas utilizadas
   - Tratamento dos dados: Pandas e Numpy
   - Biblioteca de Machine Learning: Scikit-Learn
-  - Ferramentas de pré processamentos: ADASYN e RobustScaler
+  - Ferramentas de pré processamentos: ADASYN e StandardScaler
   - Gráficos: Seaborn e Matplotlib
   - Modelos de ML: XGBoost
  
