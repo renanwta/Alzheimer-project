@@ -145,7 +145,7 @@ Informações do Paciente
 <img src="https://github.com/user-attachments/assets/20868082-8381-4281-a043-6b6767cf7621" width="150px" />
 </div>
 
-* O modelo final após a criação da pipeline chegou em bons resultados com a acurácia média de 89% mais a precisão de e recall do paciente possuir a doença com 86% e 82$ respectivamente, além disso esse valores são exprissios já que o nosso dataset possui um desbalanceamento considerável entre os pacientes, onde a quantidade de pessoas que não possui a doença é superior aos que possuissem.
+* O modelo final após a criação da pipeline chegou em bons resultados com a acurácia média de 94% mais a precisão de e recall do paciente possuir a doença com 93% e 92% respectivamente, além disso esse valores são precisos já que o nosso dataset possui um desbalanceamento considerável entre os pacientes, onde a quantidade de pessoas que não possui a doença é superior aos que possuissem.
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/af3eb3b9-b894-432a-b68c-8ffe977cc531" width="500px" />
