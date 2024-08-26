@@ -135,14 +135,14 @@ Informações do Paciente
 
 ## 6. Resultados
 <div align="center">
-<img src="https://github.com/user-attachments/assets/4cc2376e-8639-4dab-b83f-efd595c692e0" width="200px" />
+<img src="https://github.com/user-attachments/assets/5c0b9d63-ecee-46d8-bdb9-abfafae01db3" width="200px" />
 </div>
 * Pipeline final contendo os preprocessamentos e o modelo a ser utilizado.
 
 
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/20868082-8381-4281-a043-6b6767cf7621" width="150px" />
+<img src="https://github.com/user-attachments/assets/c0ac6f74-9e2a-453e-b3c5-45ae9ad0ddd2" width="150px" />
 </div>
 
 * O modelo final após a criação da pipeline chegou em bons resultados com a acurácia média de 94% mais a precisão de e recall do paciente possuir a doença com 93% e 92% respectivamente, além disso esse valores são precisos já que o nosso dataset possui um desbalanceamento considerável entre os pacientes, onde a quantidade de pessoas que não possui a doença é superior aos que possuissem.
