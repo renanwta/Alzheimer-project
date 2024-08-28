@@ -1,18 +1,17 @@
 # Alzheimer-project
 ## 1. Introdução
 
-  Conhecido comumente como a doença da perda de memória, o Alzheimer é um transtorno neurodegenerativo progressivo que faz com que o paciente, ao longo do tempo, perca gradativamente a memória e que em casos mais avançados tenha emoções, personalidade e comportamentos sociais alterados. Apesar de comumente as pessoas terem conhecimento dessa doença após o agravamento dos sintomas mais simples, é possível observar a probabilidade do indivíduo adquirir a doença ou não baseados em características fisiologicas e rotineiras dela, para isso, foi utilziados dados públicos que possuem essas característica dos pacientes e se a pessoa possuia ou não a doença. 
-Os dados foram adquiridos na base de dados público Kaggle.com, segundo o autor os dado não possuem nenhum tipo de preprocesamento de dados e somente as respostas dos pacientes, além disso, para melhor compreensão da criação do modelo, foi utilizado a metodologia CRISP-DM que consiste 6 principais etapas para a criação de um projeto de data science.
+  Commonly known as the memory loss disease, Alzheimer's is a progressive neurodegenerative disorder that gradually causes patients to lose their memory over time. In more advanced stages, it can also alter emotions, personality, and social behavior. Although people typically become aware of this disease after the worsening of milder symptoms, it is possible to observe the probability of an individual developing the disease based on their physiological and routine characteristics. To achieve this, public data containing these characteristics of patients and whether or not they had the disease were used. The data was sourced from the public database Kaggle.com, and according to the author, the data has not undergone any preprocessing and contains only the patients' responses. Additionally, for a better understanding of the model creation process, the CRISP-DM methodology, which consists of six main stages for developing a data science project, was employed.
 
 
 ## 2. Ferramentas utilizadas
-  - Tratamento dos dados: Pandas e Numpy
-  - Biblioteca de Machine Learning: Scikit-Learn
-  - Ferramentas de pré processamentos: ADASYN e StandardScaler
-  - Gráficos: Seaborn e Matplotlib
-  - Modelos de ML: XGBoost
+  - Data Processing: Pandas e Numpy
+  - library Machine Learning: Scikit-Learn
+  - Pre processing tools: ADASYN e StandardScaler
+  - Graphics: Seaborn e Matplotlib
+  - ML Model: XGBoost
  
-## 3. Principais Features e Target
+## 3. Main Features and Target
 Informações do Paciente
 - ID do Paciente
     - PatientID: Um identificador único atribuído a cada paciente (4751 a 6900).
@@ -83,36 +82,36 @@ Informações do Paciente
 
     - Médico Responsável: Esta coluna contém informações confidenciais sobre o médico responsável, com "XXXConfid" como o valor para todos os pacientes.
  
-## 4. Problematização e objetivo do projeto
-4.1 Objetivo
+## 4. Problem Statement and Project's Goals
+4.1 Project's Goal
 
-  O objetivo deste projeto foi a criação de um modelo preditivo capaz de detectar a possível presença dessa doença utilizando dados como características demográficas, estilo de vida, histórico médico, avaliação funcional e cognitiva, além dos sintomas do paciente. Isso permite que, mesmo na ausência dos sintomas mais leves, o modelo possa identificar se o paciente tende a desenvolver a doença antes do aparecimento dos sintomas mais avançados ou antes de uma cosulta médica.
-  O intuito desse projeto é tentar trazer o projeto mais próximo da realidade contento tratamento, preprocessamento, criação do modelo, tuning e deploy do projeto
+  The goal of this project was to create a predictive model capable of detecting the possible presence of Alzheimer's disease using data such as demographic characteristics, lifestyle factors, medical history, functional and cognitive assessments, as well as patient symptoms. This allows the model to identify whether a patient is likely to develop the disease even in the absence of milder symptoms, before the onset of more advanced symptoms or a medical consultation.
 
-4.2 Beneficios
+  The purpose of this project is to bring the approach closer to real-world applications by including data treatment, preprocessing, model creation, tuning, and deployment.
 
-  O principal benefício está relacionado com a possível antecipação do indivíduo identificar se há a probabilidade de possuir alzheimer ou não (obs: Vale ressaltar que o cunho desse projeto é para estudos e caso tenha colocado os seus dados para gerar um resultado jamais deverá ser levado como verdade única, caso tenha dúvidas procure um médico especializado da área), outro ponto que pode ser utiziado é trazer mais uma camada de de interpretação para o diagnóstico do paciente pelo médico em relação da presença da doença.
+4.2 Benefit
 
+  The main benefit is the potential for individuals to identify the likelihood of having Alzheimer's disease in advance (Note: It is important to emphasize that this project is intended for study purposes only, and any results generated from personal data should never be taken as the sole truth. If you have any concerns, please consult a specialized medical professional). Additionally, this model can provide an extra layer of interpretation for a doctor’s diagnosis regarding the presence of the disease
 
-## 5. Estruturação
-  5.1 Estrutura do Crisp-DM
+## 5. Structure
+  5.1 Structure of Crisp-DM
 
   <div align="center">
   <img src="https://github.com/user-attachments/assets/f5b4f818-83b3-42ab-8193-7c994eff5545" width="500px" />
   </div>
 
   
-  5.2 Estruturação do nosso projeto
+  5.2 Structure of our project
 
-  Com base na metodologia Crisp-DM, a estruturação do projeto será feita da seguinte maneira:
+  Using the Crisp-DMs models, the project will be structure by following the steps:
 
 * Business Understanding
 * Data Understanding
-  * Separção de dataset treino e teste
-  * Exploração de dados
-  * Observando as distribuição das fetures
+  * Splitting the dataset of train and test
+  * Data Exploration
+  * Observing the distribution of the features
   * Outliers
-  * Matriz de Correlação
+  * Correlation Matrix
 
 * Data Preparation
 
