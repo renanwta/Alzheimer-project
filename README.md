@@ -1,10 +1,10 @@
 # Alzheimer-project
-## 1. Introdução
+## 1. Introduction
 
   Commonly known as the memory loss disease, Alzheimer's is a progressive neurodegenerative disorder that gradually causes patients to lose their memory over time. In more advanced stages, it can also alter emotions, personality, and social behavior. Although people typically become aware of this disease after the worsening of milder symptoms, it is possible to observe the probability of an individual developing the disease based on their physiological and routine characteristics. To achieve this, public data containing these characteristics of patients and whether or not they had the disease were used. The data was sourced from the public database Kaggle.com, and according to the author, the data has not undergone any preprocessing and contains only the patients' responses. Additionally, for a better understanding of the model creation process, the CRISP-DM methodology, which consists of six main stages for developing a data science project, was employed.
 
 
-## 2. Ferramentas utilizadas
+## 2. Tools
   - Data Processing: Pandas e Numpy
   - library Machine Learning: Scikit-Learn
   - Pre processing tools: ADASYN e StandardScaler
@@ -116,8 +116,8 @@ Informações do Paciente
 * Data Preparation
 
 * Modeling
-  * Preprocessamento dos dados
-    * Busca do Modelo
+  * Preprocess of data
+    * Search of model
     * Cross Validation
   * Pipeline
   * Tuning
@@ -125,18 +125,18 @@ Informações do Paciente
 
 * Evaluation
   * Nested Cross Validation
-  * Matriz de Confusão
-  * Curva-Roc
+  * Confusion Matrix
+  * Curve Roc
 
 * Deploy
 
 
 
-## 6. Resultados
+## 6. Results
 <div align="center">
 <img src="https://github.com/user-attachments/assets/5c0b9d63-ecee-46d8-bdb9-abfafae01db3" width="200px" />
 </div>
-* Pipeline final contendo os preprocessamentos e o modelo a ser utilizado.
+* Final Pipeline content the preprocessments and the main model.
 
 
 
@@ -144,17 +144,16 @@ Informações do Paciente
 <img src="https://github.com/user-attachments/assets/c0ac6f74-9e2a-453e-b3c5-45ae9ad0ddd2" width="150px" />
 </div>
 
-* O modelo final após a criação da pipeline chegou em bons resultados com a acurácia média de 94% mais a precisão de e recall do paciente possuir a doença com 93% e 92% respectivamente, além disso esse valores são precisos já que o nosso dataset possui um desbalanceamento considerável entre os pacientes, onde a quantidade de pessoas que não possui a doença é superior aos que possuissem.
+* The final model, after creating the pipeline, achieved good results with an average accuracy of 94%, and precision and recall for patients with the disease of 93% and 92%, respectively. Moreover, these values are accurate given that our dataset has a significant imbalance between patients, with a higher number of individuals without the disease compared to those with it.
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/af3eb3b9-b894-432a-b68c-8ffe977cc531" width="500px" />
 </div>
 
-* A matriz de confusão consegue mostrar visualmente que o nosso modelo tem a capacidade de distinguir bem os novos dados, além disso, junto com os dados adquiridos no classifier report vemos que o percentual de precisão e recall são validados se baseado na matriz.
+* The confusion matrix visually demonstrates that our model has the ability to distinguish new data effectively. Additionally, together with the data obtained from the classifier report, we can see that the precision and recall percentages are validated based on the matrix.
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/97b26f72-abac-492f-964d-d4aeaa275b31" width="500px" />
 </div>
 
-* A pontuação AUC mostra que o nosso modelo tem um nível execelente para a distinção binários entre os pacientes que possuem a doença do Alzhiemer com quem não tem.
-
+* The AUC score shows that our model has an excellent level of performance in distinguishing between patients who have Alzheimer's disease and those who do not.
