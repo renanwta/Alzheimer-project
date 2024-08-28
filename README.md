@@ -12,75 +12,77 @@
   - ML Model: XGBoost
  
 ## 3. Main Features and Target
-Informações do Paciente
-- ID do Paciente
-    - PatientID: Um identificador único atribuído a cada paciente (4751 a 6900).
+Patient's infomation
+Patient ID
 
-- Detalhes Demográficos
+    PatientID: A unique identifier assigned to each patient (4751 to 6900).
 
-    - Idade: A idade dos pacientes varia de 60 a 90 anos.
-    - Gênero: Gênero dos pacientes, onde 0 representa Masculino e 1 representa Feminino.
-    - Etnia: A etnia dos pacientes, codificada da seguinte forma:
-        0: Caucasiano
-        1: Afro-Americano
-        2: Asiático
-        3: Outro
-    - Nível de Escolaridade: O nível de escolaridade dos pacientes, codificado da seguinte forma:
-        0: Nenhum
-        1: Ensino Médio
-        2: Graduação
-        3: Pós-Graduação
+Demographic Details
 
-- Fatores de Estilo de Vida
+    Age: The age of the patients ranges from 60 to 90 years.
+    Gender: Gender of the patients, where 0 represents Male and 1 represents Female.
+    Ethnicity: The ethnicity of the patients, coded as follows:
+    0: Caucasian
+    1: African American
+    2: Asian
+    3: Other
+    EducationLevel: The education level of the patients, coded as follows:
+    0: None
+    1: High School
+    2: Bachelor's
+    3: Higher
 
-    - IMC: Índice de Massa Corporal dos pacientes, variando de 15 a 40.
-    - Tabagismo: Status de tabagismo, onde 0 indica Não e 1 indica Sim.
-    - Consumo de Álcool: Consumo semanal de álcool em unidades, variando de 0 a 20.
-    - Atividade Física: Atividade física semanal em horas, variando de 0 a 10.
-    - Qualidade da Dieta: Pontuação da qualidade da dieta, variando de 0 a 10.
-    - Qualidade do Sono: Pontuação da qualidade do sono, variando de 4 a 10.
+Lifestyle Factors
 
-- Histórico Médico
+    BMI: Body Mass Index of the patients, ranging from 15 to 40.
+    Smoking: Smoking status, where 0 indicates No and 1 indicates Yes.
+    AlcoholConsumption: Weekly alcohol consumption in units, ranging from 0 to 20.
+    PhysicalActivity: Weekly physical activity in hours, ranging from 0 to 10.
+    DietQuality: Diet quality score, ranging from 0 to 10.
+    SleepQuality: Sleep quality score, ranging from 4 to 10.
 
-    - Histórico Familiar de Alzheimer: Histórico familiar de Doença de Alzheimer, onde 0 indica Não e 1 indica Sim.
-    - Doença Cardiovascular: Presença de doença cardiovascular, onde 0 indica Não e 1 indica Sim.
-    - Diabetes: Presença de diabetes, onde 0 indica Não e 1 indica Sim.
-    - Depressão: Presença de depressão, onde 0 indica Não e 1 indica Sim.
-    - Lesão na Cabeça: Histórico de lesão na cabeça, onde 0 indica Não e 1 indica Sim.
-    - Hipertensão: Presença de hipertensão, onde 0 indica Não e 1 indica Sim.
+Medical History
 
-- Medições Clínicas
+    FamilyHistoryAlzheimers: Family history of Alzheimer's Disease, where 0 indicates No and 1 indicates Yes.
+    CardiovascularDisease: Presence of cardiovascular disease, where 0 indicates No and 1 indicates Yes.
+    Diabetes: Presence of diabetes, where 0 indicates No and 1 indicates Yes.
+    Depression: Presence of depression, where 0 indicates No and 1 indicates Yes.
+    HeadInjury: History of head injury, where 0 indicates No and 1 indicates Yes.
+    Hypertension: Presence of hypertension, where 0 indicates No and 1 indicates Yes.
 
-    - Pressão Arterial Sistólica: Pressão arterial sistólica, variando de 90 a 180 mmHg.
-    - Pressão Arterial Diastólica: Pressão arterial diastólica, variando de 60 a 120 mmHg.
-    - Colesterol Total: Níveis de colesterol total, variando de 150 a 300 mg/dL.
-    - Colesterol LDL: Níveis de colesterol de lipoproteína de baixa densidade, variando de 50 a 200 mg/dL.
-    - Colesterol HDL: Níveis de colesterol de lipoproteína de alta densidade, variando de 20 a 100 mg/dL.
-    - Triglicerídeos: Níveis de triglicerídeos, variando de 50 a 400 mg/dL.
+Clinical Measurements
 
-- Avaliações Cognitivas e Funcionais
+    SystolicBP: Systolic blood pressure, ranging from 90 to 180 mmHg.
+    DiastolicBP: Diastolic blood pressure, ranging from 60 to 120 mmHg.
+    CholesterolTotal: Total cholesterol levels, ranging from 150 to 300 mg/dL.
+    CholesterolLDL: Low-density lipoprotein cholesterol levels, ranging from 50 to 200 mg/dL.
+    CholesterolHDL: High-density lipoprotein cholesterol levels, ranging from 20 to 100 mg/dL.
+    CholesterolTriglycerides: Triglycerides levels, ranging from 50 to 400 mg/dL.
 
-    - MMSE: Pontuação do Mini Exame do Estado Mental, variando de 0 a 30. Pontuações mais baixas indicam comprometimento cognitivo.
-    - Avaliação Funcional: Pontuação de avaliação funcional, variando de 0 a 10. Pontuações mais baixas indicam maior comprometimento.
-    - Queixas de Memória: Presença de queixas de memória, onde 0 indica Não e 1 indica Sim.
-    - Problemas Comportamentais: Presença de problemas comportamentais, onde 0 indica Não e 1 indica Sim.
-    - Atividades da Vida Diária: Pontuação das atividades da vida diária, variando de 0 a 10. Pontuações mais baixas indicam maior comprometimento.
+Cognitive and Functional Assessments
 
-- Sintomas
+    MMSE: Mini-Mental State Examination score, ranging from 0 to 30. Lower scores indicate cognitive impairment.
+    FunctionalAssessment: Functional assessment score, ranging from 0 to 10. Lower scores indicate greater impairment.
+    MemoryComplaints: Presence of memory complaints, where 0 indicates No and 1 indicates Yes.
+    BehavioralProblems: Presence of behavioral problems, where 0 indicates No and 1 indicates Yes.
+    ADL: Activities of Daily Living score, ranging from 0 to 10. Lower scores indicate greater impairment.
 
-    - Confusão: Presença de confusão, onde 0 indica Não e 1 indica Sim.
-    - Desorientação: Presença de desorientação, onde 0 indica Não e 1 indica Sim.
-    - Mudanças de Personalidade: Presença de mudanças de personalidade, onde 0 indica Não e 1 indica Sim.
-    - Dificuldade em Completar Tarefas: Presença de dificuldade em completar tarefas, onde 0 indica Não e 1 indica Sim.
-    - Esquecimento: Presença de esquecimento, onde 0 indica Não e 1 indica Sim.
+Symptoms
 
-- Informações de Diagnóstico
+    Confusion: Presence of confusion, where 0 indicates No and 1 indicates Yes.
+    Disorientation: Presence of disorientation, where 0 indicates No and 1 indicates Yes.
+    PersonalityChanges: Presence of personality changes, where 0 indicates No and 1 indicates Yes.
+    DifficultyCompletingTasks: Presence of difficulty completing tasks, where 0 indicates No and 1 indicates Yes.
+    Forgetfulness: Presence of forgetfulness, where 0 indicates No and 1 indicates Yes.
 
-    - Diagnóstico: Status de diagnóstico para Doença de Alzheimer, onde 0 indica Não e 1 indica Sim.
+Diagnosis Information
 
-- Informações Confidenciais
+    Diagnosis: Diagnosis status for Alzheimer's Disease, where 0 indicates No and 1 indicates Yes.
 
-    - Médico Responsável: Esta coluna contém informações confidenciais sobre o médico responsável, com "XXXConfid" como o valor para todos os pacientes.
+Confidential Information
+
+    DoctorInCharge: This column contains confidential information about the doctor in charge, with "XXXConfid" as the value for all patients.
+
  
 ## 4. Problem Statement and Project's Goals
 4.1 Project's Goal
